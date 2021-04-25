@@ -1,0 +1,10 @@
+{
+    "name": "pc/sktripplanner",
+    "authors": [
+        {
+            "name": "marco carlos",
+            "email": "isrisscarlosid1@gmail.com"
+        }
+    ],
+    "require": {}
+}
