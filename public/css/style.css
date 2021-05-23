@@ -1,0 +1,128 @@
+/* skytriplanner
+version 1.0
+Edited by Marco carlos
+
+*/
+:root{
+    --primary-color:#4ad395;
+    --shadow: 0 6px 24px 0 rgba(32,32,149,.1);
+}
+/* Section header */
+.nav-shadow{
+    box-shadow: var(--shadow);
+}
+/* .h100-sm{
+    height: 800px;
+    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+} */
+.navbar-brand{
+    font-size: 16px;
+}
+.main__search__div{
+    box-shadow:var(--shadow);
+    border-radius: 15px;
+    top: -40px;
+    position: relative;
+}
+.rounded-pill-lg{
+    border-radius: 50rem;
+}
+@media(max-width:968px){
+    .rounded-pill-lg{
+        border-radius: 10px;
+    }
+}
+.containerx{
+    margin-right: 100px;
+    margin-left: 100px;
+}
+@media(max-width:768px){
+    .containerx{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+label{
+    font-size: 14px;
+}
+input[type="text"]::-webkit-input-placeholder{
+    font-size: 14px;
+}
+.modal__div{
+  position:absolute;
+  box-shadow: 0 0 30px rgba(14,42,71,.25);
+  animation: popover .2s ease-in-out;
+  background-color: #fff;
+  padding: 10px;
+  top:105px;
+  width: 400px;
+  height: fit-content;
+  border-radius: 5px;
+  display: none;
+}
+input{
+ font-size: 12px;
+ height: 16px;
+}
+.border-bottom-2{
+ border-bottom: 3px solid #222;
+}
+.bg-green{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color)
+}
+.carousels{
+    background-image: url(https://images.unsplash.com/photo-1513907404652-d138942b8859?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Njh8fHxlbnwwfHx8&auto=format&fit=crop&w=900&q=100&blur=5);
+    height: 150px;
+
+}
+.border-right{
+    border-right: 1px solid #e9e9e9;
+}
+
+
+/* ==============Wrapper===================== */
+.wrapper{
+    background-color: #fff;
+    overflow-x: scroll;
+    display: flex;
+    scrollbar-width:1px !important;
+    scrollbar-color:blue #000  !important;
+}
+.wrapper::-webkit-scrollbar{
+    width: 0px;
+}
+.wrapper-item{
+ width: 280px;
+ margin-left: 5px;
+}
+.wrapper-text{
+font-size: 19px;
+margin-bottom: 55px;
+}
+.wraper-img{
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.wraper-img2{
+    width: 250px;
+    height: auto;
+}
+.wrapper-img-rounded{
+    width: 150px;
+    height: 150px;
+}
+@media(max-width:576px){
+    .container{
+        margin-left: 1px;
+    }
+    .wraper-img{
+        width: 250px;
+        height: 275px;
+        border-radius: 10px;
+    }
+    
+ 
+}

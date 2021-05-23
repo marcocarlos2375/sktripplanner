@@ -1,0 +1,336 @@
+:root{
+--sky-primary-color:#4801FF;
+--sky-gray-btn:#fff;
+}
+
+/* ==============TABS================= */
+.nav{
+    border-bottom:1px solid #e9e9e9;
+}
+.nav .nav-item a{
+    color: #777;
+}
+.nav-link:hover{
+    
+    border-style: none;
+    border-radius: 0;
+
+}
+.nav .nav-item >.active{
+    border-style: none;
+    border-bottom:3px solid #222;
+    font-weight: bold;
+    background-color: transparent;
+    color: #111;
+
+}
+.nav>.nav-item:hover{
+    border-style: none;
+    color: blue;
+}
+.tab-icon{
+    font-size: 23px;
+}
+.nav-tabs{
+    border-style: none !important;
+}
+@media(max-width:768px){
+    .container{
+        margin-left: 2px !important;
+        margin-right: 2px !important;
+    }
+}
+
+.prevBtn{
+    float: left;
+    text-transform:capitalize;
+     background-color: #222;
+    color: #fff;
+    text-transform:capitalize;
+    margin-right: 30px;
+    margin-top: 8px;
+    padding: 10px;
+    min-width: 100px;
+
+}
+.nextBtn{
+    float: right;
+    background-color: #222;
+    color: #fff;
+    text-transform:capitalize;
+    margin-right: 30px;
+    margin-top: 8px;
+    padding: 10px;
+    min-width: 100px;
+
+   
+    
+}
+.modal__body{
+    padding: 5px;
+}
+.modal__div{
+    display: none;
+    position: absolute;
+    top: 5000px;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    animation: srolltoup 0.125s;
+    box-shadow: 0px -3px 10px 0px #f1f1f1;
+    padding: 30px;
+    z-index: 1000;
+}
+.w450{
+    width: 440px;
+}
+@keyframes srolltoup{
+    from{
+        transform: translateY(10%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+@media(max-width:768px){
+    .modal__div{
+        display: none;
+        position: absolute;
+        position: fixed;
+        top: 0px;
+        height: 100%;
+        left: 0;
+        width: 100%;
+        /* border-top-left-radius: 2rem; */
+        /* border-top-right-radius: 2rem; */
+        border-bottom: 1px solid #fff;
+        /* overflow-y: scroll; */
+        /* box-shadow: 1px -6px 9px 4px #eee; */
+        z-index: 1000;
+        background-color: #fff;
+    }
+    .modal__head__barre{
+        background-color: #e9e9e9;
+        height: 4px;
+        border-radius: 1.5rem;
+    }
+    
+    .modal__footer{
+        position: relative;
+        position:fixed;
+        right:0;
+        bottom:0;
+        left:0;
+        padding: 10px;
+        background-color: #fff;
+        /* z-index:1030; */
+    }
+    .datepicker table tr td,
+    .datepicker table tr th {
+    text-align: center;
+    min-width: 13px;
+    min-height: 13px;
+    border-radius: 0;
+    font-size: 14px;
+    border: none;
+    }
+}
+td.active.active, .datepicker table tr td.active.highlighted.active {
+    color: #fff;
+    background-color: #0a0909  !important;
+    border-color: #333 !important;
+}
+.activex{
+    display: block;
+}
+.close__btn{
+    cursor: pointer;
+}
+.btnShow{
+    height: 54px;
+    background-color: var(--sky-gray-btn);
+    border-style: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+/* .btnShow:hover,.input__bars:hover{
+    background-color:#f9f9f9;
+} */
+.btnShow:focus,.input__bars:focus{
+   outline: none;
+}
+.input__bars{
+    height: 20px;
+    position: relative;
+    top: -10px;
+    text-transform: capitalize;
+    font-weight: bold;
+    border-style: none;
+    background-color:var(--sky-gray-btn);
+    cursor: pointer;
+    width: 100%;
+
+}
+.input__bars::-webkit-input-placeholder{
+    color: #555;
+}
+.group-input{
+    text-align: left;
+}
+.icon__bars{
+   
+    font-size: 25px;
+    color: #999;
+    position: relative;
+    top: 15px;
+    left: 5px;
+}
+
+.rounded-pill {
+    border-radius: 3rem;
+}
+@media(max-width:576px){
+   
+}
+.shadow-nav{
+    box-shadow: 1px 4px 6px 0px #f1f1f1;
+}
+.shadow{
+    box-shadow: -1px 1px 10px 0px #f1f1f1;
+}
+#reverse-city{
+    border-style: none;
+    border-bottom:2px solid #111;
+    border-radius: 0;
+    padding: 5px;
+
+}
+#reverse-city:focus{
+    outline: none;
+}
+.border-leftx{
+    border-left: 1px solid #999;
+}
+.blockquotes{
+    background-color: #f9f9f9;
+    border-left: 3px solid var(--sky-primary-color);
+    padding: 10px;
+    font-size: 12px;
+}
+.hote{
+    background: #111;
+    /* background-color: var(--sky-primary-color); */
+}
+.shadow-nav{
+    box-shadow: 0px 3px 10px 0px #f1f1f1;
+}
+.bg-black{
+    background-color: #222;
+}
+.text-violet{
+    color: var(--sky-primary-color);
+}
+
+/* ==============Wrapper===================== */
+.wrapper{
+    background-color: #fff;
+    overflow-x: scroll;
+    display: flex;
+    scrollbar-width:1px !important;
+    scrollbar-color:blue #000  !important;
+}
+.wrapper::-webkit-scrollbar{
+    width: 0px;
+}
+.wrapper-item{
+ width: 280px;
+ margin-left: 25px;
+}
+.wrapper-text{
+font-size: 19px;
+margin-bottom: 55px;
+}
+.wraper-img{
+    width: 300px;
+    height: 200px;
+}
+.wrapper-img-rounded{
+    width: 150px;
+    height: 150px;
+}
+@media(max-width:576px){
+    .container{
+        margin-left: 2px;
+    }
+    .wrapper-img-rounded{
+        width: 90px;
+        height: 90px;
+    }
+   
+}
+
+.float-right{
+    float: left;
+}
+.display-sm-block{
+    display: none;
+}
+@media(max-width:576px){
+    .display-sm-none{
+        display: none;
+    }
+    .display-sm-block{
+        display: block;
+    }
+    .circle_persons{
+        background-color: transparent;
+        border:5px dashed #fff ;
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        }
+}
+.wh40{
+    width: 40px;
+    height: 40px;
+}
+.circle_persons{
+background-color: transparent;
+border:5px dashed #fff ;
+width: 300px;
+height: 300px;
+border-radius: 100%;
+}
+.img-circle-person-center{
+width: 70px;
+height: 70px;
+}
+.dashed_div{
+background-color: transparent;
+padding: 5px;
+border:2px dashed #fff ;
+width: fit-content;
+height: fit-content;
+border-radius: 100%;
+
+
+}
+.w50{
+    width: 50px;
+    height: 50px;
+}
+.w150{
+    width: 150px;
+    height: 150px;
+}
+
+
+.input_reservation{
+    border-style: none;
+    background-color: #e9e9e9;
+}
+.container-custom{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
